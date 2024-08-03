@@ -1,0 +1,135 @@
+ * {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style-type: none;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  ul li:hover {
+    background: #ddd;
+  }
+ 
+  .header {
+    margin-top: 0;
+    background-color: #f78501;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-align: center;
+  }
+  img {
+    background-color: white;
+  }
+  
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+ 
+  button {
+    cursor: pointer;
+    padding: 10px;
+    width: 20%;
+    background-color: #bababa;
+    color: #090909;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+
+
+   body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #bbb;
+  }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px; /* Listenin maksimum yüksekliği */
+    overflow-y: auto; /* Dikey kaydırma çubuğu */
+    margin: 0 auto;
+    width: 80%; /* Listeyi ortalamak için genişlik belirle */
+}
+
+li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.toast {
+   
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    right: 30px;
+    top: 30px;
+    font-size: 17px;
+  }
+  
+  .toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
